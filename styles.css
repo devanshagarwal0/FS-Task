@@ -1,0 +1,49 @@
+/* Basic styling for the table */
+a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.subject {
+    position: relative;
+}
+
+.teacher-info {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    color: #000;
+}
+
+/* Show the teacher info on hover */
+.subject:hover .teacher-info {
+    display: block;
+}
+
+.lunch-row {
+    background-color: #e6ffe6;
+    font-weight: bold;
+    text-align: center;
+}
